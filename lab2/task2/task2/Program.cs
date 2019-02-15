@@ -24,7 +24,7 @@ namespace task2
         static void Main(string[] args)
         {
             StreamReader str = new StreamReader(@"C:\Users\hp\Desktop\Test\text.txt");
-            string s = str.ReadToEnd(); // string s = Console.ReadLine();
+            string s = str.ReadToEnd();
             int[] a = s.Split().Select(int.Parse).ToArray();
             List<int> l = new List<int>();
             for (int i = 0; i < a.Length; i++)
@@ -38,11 +38,7 @@ namespace task2
 
             }
             stw.Close();
-            /* for(int i = 0; i < l.Count; i++)
-             {
-                 Console.Write(l[i] + " ");
-             }*/
-
+            
 
         }
     }

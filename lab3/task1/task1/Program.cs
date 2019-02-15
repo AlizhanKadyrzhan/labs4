@@ -67,7 +67,7 @@ namespace task1
     {
         static void Main(string[] args)
         {
-            DirectoryInfo firstdir = new DirectoryInfo(@"C:\Users\hp\Desktop\Test");
+            DirectoryInfo firstdir = new DirectoryInfo(@"C:\Users\hp\Desktop\test");
             Layer l = new Layer
             {
                 Directories = firstdir.GetDirectories(),
@@ -130,7 +130,7 @@ namespace task1
                 }
 
 
-                else if (key.Key == ConsoleKey.D)
+                else if (key.Key == ConsoleKey.Delete)
                 {
                     int todelete = history.Peek().SelectedIndex;
                     int j = todelete;
